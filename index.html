@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .form-control {
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <main>
+        <div class="temperatureContainer">
+            <label for="">Enter the Temperature: </label>
+            <input type="number" id="input"> <br>
+            <div class="form-control">
+                <select name="" id="Temp">
+                    <option value="C">Celesius</option>
+                    <option value="K">Kelvin</option>
+                    <option value="F">Fahrenheit</option>
+                </select></div>
+            
+            <div class="form-control">
+                <label for="">Result:</label>
+                <input type="number" class="form-control" id="result">
+            </div>
+            <div class="form-control">
+                <button onclick="convert()">Convert</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
